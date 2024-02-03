@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Jacques+Francois:400");
+
+.home-page {
+  align-items: center;
+  background-image: url(capstone-1/background.jpeg);
+  background-position: 50% 50%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 1117px;
+  width: 1728px;
+}
+
+.hidden,
+.hidden * {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.overlap-group1 {
+  align-items: center;
+  background-color: #453d2ab2;
+  display: flex;
+  height: 99px;
+  min-width: 1728px;
+  padding: 1px 23px;
+}
+
+.title {
+  color: rgba(209, 204, 208, 1);
+  font-family:  "Jacques Francois";
+  font-size: 50px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-bottom: 10px;
+  min-height: 41px;
+  text-align: center;
+  white-space: nowrap;
+  width: 128px;
+}
+
+.sign-up {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-bottom: 11px;
+  margin-left: 1252px;
+  min-height: 24px;
+  text-align: center;
+  white-space: nowrap;
+  width: 146px;
+}
+
+.log-in {
+  align-self: flex-end;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: 24px;
+  min-height: 66px;
+  text-align: center;
+  width: 128px;
+}
+
+.overlap-group {
+  height: 100px;
+  margin-left: 1px;
+  margin-top: 423px;
+  position: relative;
+  width: 545px;
+}
+
+.discover-makeup-for-every-mood {
+  color: rgba(93, 64, 30, 1);
+  font-family: "Jacques Francois";
+  font-size:  20px;
+  font-weight: 400;
+  left: 87px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 66px;
+  width: 371px;
+}
+
+.the-beauty-library {
+  color: rgba(93, 64, 30, 1);
+  font-family: "Jacques Francois";
+  font-size: 50px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 545px;
+}
+
+.home-page-item {
+  letter-spacing: 0;
+  line-height: normal;
+  min-height: 34px;
+  text-align: center;
+  width: 246px;
+}
+
+.search-by-category {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: 12px;
+  min-height: 34px;
+  text-align: center;
+  width: 246px;
+}

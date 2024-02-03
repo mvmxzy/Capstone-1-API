@@ -1,0 +1,438 @@
+.home {
+    background: url("../../assets/brush.png");
+    // background-size: 1700px;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+// html, body {
+//     height: 100vh;
+//     overflow: hidden;
+// }
+
+body.noScroll
+{
+    position: fixed; 
+    overflow-y: scroll;
+    width: 100%;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    padding-top: 5rem;
+    transition: all 1.3s;
+    .header-content {
+        width: 100%;
+        position: relative;
+        transform: scale(1.4);
+        transition: all 1.0s;
+        #left-bracket {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        #right-bracket {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        .headerText {
+            margin: 0 auto;
+            width: 400px;
+            h1 {
+                font-size: 70px;
+                letter-spacing: 20px;
+                span {
+                    font-size: 34px;
+                    letter-spacing: 10px;
+                    line-height: 0;
+                }
+            }
+            h2 {
+                text-align: right;
+                margin-top: 20px;
+                font-size: 16px;
+                font-weight: 300;
+                font-family: $bodyFont;
+                letter-spacing: 2px;
+                color: white;
+                font-style: italic;
+
+            }
+        }
+    }
+    .master-wishlist {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+
+// LOADING ANIMATION
+$animationLength: 1.5s;
+$animationRadius: 25px;
+$dotSize: 16px;
+
+.loader-container {
+    margin-top: 80vh;
+}
+
+.loader {
+    position: relative;
+    width: $animationRadius * 3 + $dotSize;
+    height: $dotSize;
+    margin: $animationRadius auto;
+}
+
+.dot {
+    display: inline-block;
+    width: $dotSize;
+    height: $dotSize;
+    border-radius: $dotSize * 0.5;
+    background: #ccc;
+    position: absolute;
+}
+
+.dot_1 {
+    animation: animateDot1 $animationLength linear infinite;
+    left: $animationRadius;
+    background: #E5A1B3;
+}
+
+.dot_2 {
+    animation: animateDot2 $animationLength linear infinite;
+    animation-delay: $animationLength / 3;
+    left: $animationRadius * 2;
+}
+
+.dot_3 {
+    animation: animateDot3 $animationLength linear infinite;
+    left: $animationRadius;
+}
+
+.dot_4 {
+    animation: animateDot4 $animationLength linear infinite;
+    animation-delay: $animationLength / 3;
+    left: $animationRadius * 2;
+}
+
+@keyframes animateDot1 {
+    0%{ transform: rotate(0deg) translateX(-$animationRadius); }
+    25% { transform: rotate(180deg) translateX(-$animationRadius); }
+    75% { transform: rotate(180deg) translateX(-$animationRadius); }
+    100% { transform: rotate(360deg) translateX(-$animationRadius); }
+}
+
+@keyframes animateDot2 {
+    0%{ transform: rotate(-0deg) translateX(-$animationRadius); }
+    25% { transform: rotate(-180deg) translateX(-$animationRadius); }
+    75% { transform: rotate(-180deg) translateX(-$animationRadius); }
+    100% { transform: rotate(-360deg) translateX(-$animationRadius); }
+}
+
+@keyframes animateDot3 {
+    0%{ transform: rotate(0deg) translateX($animationRadius); }
+    25% { transform: rotate(180deg) translateX($animationRadius); }
+    75% { transform: rotate(180deg) translateX($animationRadius); }
+    100% { transform: rotate(360deg) translateX($animationRadius); }
+}
+
+@keyframes animateDot4 {
+    0%{ transform: rotate(-0deg) translateX($animationRadius); }
+    25% { transform: rotate(-180deg) translateX($animationRadius); }
+    75% { transform: rotate(-180deg) translateX($animationRadius); }
+    100% { transform: rotate(-360deg) translateX($animationRadius); }
+}
+
+.header-wrapper {
+    width: 580px;
+    margin: 0 auto;
+    // border: 1px solid red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.filter-container button {
+    border: none;
+    background: none;
+    font-family: $headingFont;
+    font-weight: 300;
+    font-size: 20px;
+    text-transform: lowercase;
+    margin: 2rem 2vw 2rem 0;
+
+    // padding: 0 1rem;
+    letter-spacing: 0.5rem;
+    outline: 0;
+    &:hover {
+        font-weight: 500;
+        color: $purple;
+    }
+}
+
+.option-container {
+    font-family: $headingFont;
+    font-weight: 300;
+    text-transform: lowercase;
+    float: left;
+    width: 70%;
+    &:last-child {
+        text-align: right;
+        width: 30%;
+        margin-top: 2.4rem;
+    }
+    label {
+        font-weight: 500;
+        text-transform: uppercase;
+        color: $purple;
+        font-size: 20px;
+        padding-right: 1rem;
+    }
+    select {
+        background: none;
+        border: none;
+        margin: 0;
+        padding: 0;
+        font-weight: 300;
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+}
+
+.gallery-options {
+    margin: 1rem 0;
+}
+
+.looks-gallery{
+    width: 80vw;
+}
+
+.look-cell {
+    display: inline-block;
+    width: 16vw;
+    height: 16vw;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    position: relative;
+    overflow: hidden;
+    .overlay{
+        position: absolute;
+        background-color: rgba(0,0,0,0.3);
+        border: none;
+        width: 16vw;
+        height: 16vw;
+        opacity: 0;
+        transition: all 0.3s;
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 40%;
+            height: auto;
+        }
+        .look-type{
+            text-align: center;
+            position: absolute;
+            bottom: 3.5vw;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 14px;
+            color: white;
+            text-transform: uppercase;
+            font-family: $bodyFont;
+            font-weight: 700;
+            letter-spacing: 4px;
+        }
+    }
+    .photo-cell {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        img {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+    }
+    .likes-cell{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 100px;
+        height: 45px;
+        background-color: rgba(0,0,0,0.3);
+        transition: all 0.3s;
+        text-align: right;
+        padding-right: 1rem;
+        button{
+            height: 45px;
+            cursor: pointer;
+            display: inline-block;
+            border: none;
+            background-color: transparent;
+            img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+        h5 {
+            display: inline-block;
+            width: auto;
+            font-weight: 300;
+            letter-spacing: 3px;
+            font-size: 20px;
+            color: white;
+            vertical-align: top;
+            padding-top: 5px;
+        }
+    }
+}
+
+.look-cell:hover{
+	transform: scale(1.05);
+	transition: all 0.5s;
+    .overlay{
+        opacity: 1;
+    }
+    .likes-cell{
+        background-color: transparent;
+    }
+}
+
+.like-button:focus{
+    outline: 0;
+}
+
+.master-wishlist {
+	display: block;
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 1040px) {
+	.look-cell {
+	    .look-type {
+			display: none;
+		}
+		// .look-type{
+            // bottom: 6.5vw;
+		// }
+	}
+	.option-container, .option-container:last-child {
+		float: none;
+		width: 100%;
+		text-align: left;
+		margin: 1.5rem 0;
+		.filter-container {
+			button {
+				margin: 1rem 0;
+			}
+		}
+	}
+}
+@media (max-width: 960px) {
+
+    header {
+        // margin: auto;
+        .header-content {
+            width: 80%;
+            margin: auto;
+            .headerText {
+                margin: 0 auto;
+                width: 300px;
+                h1 {
+                    font-size: 50px;
+                    letter-spacing: 15px;
+                    span {
+                        font-size: 30px;
+                        letter-spacing: 7px;
+                    }
+                }
+                h2 {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+@media (max-width: 840px) {
+
+    header {
+        .header-content {
+            width: 70%;
+            margin: auto;
+            .headerText {
+                margin: 0 auto;
+                width: 250px;
+                h1 {
+                    font-size: 34px;
+                    letter-spacing: 15px;
+                    span {
+                        font-size: 20px;
+                        letter-spacing: 7px;
+                        margin-bottom: 20px;
+                    }
+                }
+                h2 {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	.look-cell {
+	    width: 35vw;
+	    height: 35vw;
+	    .overlay {
+	        width: 35vw;
+	        height: 35vw;
+		}
+		// .look-type{
+            // bottom: 6.5vw;
+		// }
+	}
+}
+  
+
+@media (max-width: 650px) {
+
+    header {
+        .header-content {
+            svg{
+                transform: scale(0.5)
+            }
+            width: 60%;
+            margin: auto;
+            .headerText {
+                margin: 0 auto;
+                width: 230px;
+                h1 {
+                    font-size: 34px;
+                    letter-spacing: 15px;
+                    span {
+                        font-size: 20px;
+                        letter-spacing: 7px;
+                        margin-bottom: 20px;
+                    }
+                }
+                h2 {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+}
+

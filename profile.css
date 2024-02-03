@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css?family=Jacques+Francois:400");
+
+.profileu47favorites {
+  align-items: flex-end;
+  background-image: url(capstone-1/background.jpeg);
+  background-position: 50% 50%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 43px;
+  height: 1117px;
+  overflow: hidden;
+  width: 1728px;
+}
+
+.hidden,
+.hidden * {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.flex-row {
+  align-items: flex-start;
+  display: flex;
+  gap: 19px;
+  height: 659px;
+  margin-right: -16px;
+  min-width: 1704px;
+}
+
+.rectangle-2 {
+  height: 321px;
+  margin-top: 20px;
+  object-fit: cover;
+  width: 344px;
+}
+
+.profileu47favorites .flex-col-5 {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-col-1 {
+  align-items: center;
+  gap: 78px;
+  min-height: 659px;
+  width: 1341px;
+}
+
+.flex-col-2 {
+  align-items: flex-start;
+  gap: 12px;
+  min-height: 103px;
+  width: 1341px;
+}
+
+.line-1 {
+  height: 5px;
+  object-fit: cover;
+  width: 1280px;
+}
+
+.frame-container {
+  align-items: flex-end;
+  align-self: flex-end;
+  display: flex;
+  gap: 418px;
+  height: 86px;
+  min-width: 1308px;
+}
+
+.frame-4 {
+  align-items: flex-start;
+  display: flex;
+  gap: 37px;
+  height: 34px;
+  margin-bottom: 9px;
+  min-width: 420px;
+}
+
+.frame-6 {
+  align-items: center;
+  border: 1px solid;
+  border-color: rgba(93, 64, 30, 1);
+  border-radius: 10px;
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  margin-left: -49px;
+  margin-top: -10px;
+  padding: 10px;
+  position: relative;
+}
+
+.x-favorites {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+
+.frame-5 {
+  align-items: center;
+  border: 1px solid;
+  border-color: rgba(93, 64, 30, 1);
+  border-radius: 10px;
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: -10px;
+  padding: 10px;
+  position: relative;
+}
+
+.frame-7 {
+  align-items: center;
+  background-color: 
+#ceb0b080;
+  border-radius: 5px;
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+  position: relative;
+}
+
+.mimozas-favorites {
+  color: rgba(93, 64, 30, 1);
+  font-family: "Jacques Francois";
+  font-size: 50px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  text-align: center;
+  width: fit-content;
+}
+
+.flex-row-1 {
+  height: 478px;
+  margin-right: 68px;
+  min-width: 1045px;
+}
+
+.profileu47favorites .flex-row-3 {
+  align-items: flex-start;
+  display: flex;
+  gap: 103px;
+}
+
+.flex-col {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 476px;
+  width: 184px;
+}
+
+.rectangle-1 {
+  background-color: rgba(243, 200, 200, 1);
+  height: 184px;
+  margin-top: 47px;
+  width: 184px;
+}
+
+.product-name-1 {
+  margin-left: 1px;
+  margin-top: 4px;
+  min-height: 26px;
+  min-width: 133px;
+}
+
+.profileu47favorites .product-name-8 {
+  letter-spacing: 0;
+  line-height: normal;
+  text-align: center;
+}
+
+.product-name {
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: 1px;
+  margin-top: 5px;
+  min-height: 26px;
+  min-width: 133px;
+  text-align: center;
+}
+
+.rectangle {
+  background-color: rgba(243, 200, 200, 1);
+  height: 184px;
+  width: 184px;
+}
+
+.flex-col-3 {
+  align-items: center;
+  min-height: 478px;
+  width: 184px;
+}
+
+.product-name-2 {
+  margin-right: 1px;
+  margin-top: 7px;
+  min-height: 26px;
+  min-width: 133px;
+}
+
+.product-name-3 {
+  margin-right: 1px;
+  margin-top: 6px;
+  min-height: 26px;
+  min-width: 133px;
+}
+
+.rectangle-5 {
+  background-color: rgba(243, 200, 200, 1);
+  height: 184px;
+  margin-top: 45px;
+  width: 184px;
+}
+
+.flex-row-2 {
+  height: 476px;
+  min-width: 471px;
+}
+
+.product-name-6 {
+  margin-right: 1px;
+  margin-top: 5px;
+  min-height: 26px;
+  min-width: 133px;
+}
+
+.product-name-7 {
+  margin-right: 1px;
+  margin-top: 4px;
+  min-height: 26px;
+  min-width: 133px;
+}
+
+.flex-col-4 {
+  align-items: center;
+  min-height: 471px;
+  width: 184px;
+}
+
+.product-name-4 {
+  margin-right: 1px;
+  min-height: 26px;
+  min-width: 133px;
+}
+
+.overlap-group1 {
+  height: 209px;
+  margin-top: 52px;
+  position: relative;
+  width: 184px;
+}
+
+.rectangle-4 {
+  background-color: rgba(243, 200, 200, 1);
+  height: 184px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 184px;
+}
+
+.product-name-5 {
+  left: 25px;
+  position: absolute;
+  top: 183px;
+}
+
+.overlap-group {
+  align-items: center;
+  background-color: 
+#453d2ab2;
+  display: flex;
+  height: 99px;
+  min-width: 1728px;
+  padding: 1px 23px;
+}
+
+.log-out {
+  align-self: flex-end;
+  color: rgba(209, 204, 208, 1);
+  font-family: "Jacques Francois";
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: 19px;
+  min-height: 66px;
+  text-align: center;
+  width: 128px;
+}
+
+.ellipse-1 {
+  height: 82px;
+  margin-left: 1261px;
+  margin-top: 1px;
+  object-fit: cover;
+  width: 82px;
+}
+
+.title {
+  color: rgba(209, 204, 208, 1);
+  font-family: "Jacques Francois";
+  font-size: 50px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-bottom: 10px;
+  min-height: 41px;
+  text-align: center;
+  white-space: nowrap;
+  width: 128px;
+}
